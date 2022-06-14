@@ -1,0 +1,814 @@
+/*
+    Theme name: Honey Badger Theme 2021
+    Author: Honey Badger
+    Version: 1.0
+*/
+*{
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+html{
+    width: 100%;
+
+}
+body {
+    color:#000000;
+    margin:0px;
+    width: 100%;
+}
+/*Header___________________________________*/
+#main-header {
+    box-sizing: border-box;
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#main-header-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position:absolute;
+}
+#main-header-top h1 {
+    color: #fff;
+    text-decoration: none;
+    
+    margin: 13px 0px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#main-header-top h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-navigation a:hover, #main-navigation a.current-menu-item{
+    color: orange;
+}
+#main-navigation a{
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0px 10px;
+    color: white;
+}
+#main-header-top .fa-bars{
+    display: none;
+}
+#main-links{
+    display: inline;
+}
+
+.page-header{
+    font-weight:100;
+    font-size: 3.5rem;
+    color:white;
+
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.page-subtitle{
+    color:white;
+    font-size: 1.2rem;
+}
+.headings{
+    margin: 90px 13% 140px;
+   align-self: flex-start;
+}
+.headings.front{
+    align-self:center;
+    margin: 110px 13% 160px;
+}
+.headings.front p{
+    text-align:center;
+}
+.front .page-subtitle{
+   font-size: 1.5rem;
+}
+.front .page-header{
+    font-size: 4.5rem;
+}
+
+
+
+
+/*Front page banner___________________________________*/
+/*.page-banner {
+    padding: 140px 0px ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.95;
+    position: relative;
+}
+.banner-subtitle{
+    color:white;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding-top: 25px;
+}
+.banner-header{
+    font-size: 4.5rem;
+    color:white;
+    margin: 0px;
+}*/
+/*Single page_________________________*/
+
+
+main.page-main , .main-blogs{
+    padding: 30px 13%;
+    position: relative;
+}
+main.page-main::after{
+    content: " ";
+    display: table;
+    clear:both;
+}
+
+
+/*page link navigatiion__________________*/
+.page-links{
+    margin-top: 15px;
+    float:right;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+}
+.page-links *{
+    text-decoration: none;
+    text-align:center;
+    margin: 0px;
+    display: block;
+}
+.page-links ul{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    list-style-type: none;
+}
+.parent-title{
+    background-color: rgba(66, 27, 66);
+    padding: 0.5em 0px;
+}
+.parent-title a{
+    color:white;
+    font-weight: normal;
+}
+.page-links li{
+    flex:1;
+    background-color: rgb(255, 172, 71, 0.45) ;
+    padding: 12px 0px;
+}
+.page-links li:hover{
+    background-color: rgb(255, 172, 71, 0.8) ;
+}
+.page-links ul a{
+    color:rgb(19, 17, 32);
+   font-size:0.9em;
+}
+.current_page_item a{
+    font-weight: bold;
+}
+.page-links .current_page_item {
+    background-color: rgb(255, 172, 71, 0.6) ;
+}
+/*Page position link __________________________*/
+.page-position{
+    position: absolute;
+    top:-25px;
+    display:block;
+}
+.parent-link{
+    text-decoration: none;
+    background-color: rgba(66, 27, 66);
+    color:white;
+    padding: 12px 14px;
+}
+.parent-link:hover{
+    background-color: rgb(44, 19, 44);
+}
+.current-page-title{
+   background-color: rgb(253, 217, 174) ;
+    padding: 12px 14px;
+    color:rgb(61, 61, 61);
+}
+.current-page-title a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(61, 61, 61);
+}
+.current-page-title a:hover{ 
+    text-decoration: underline;
+}
+
+/*blog items on blog page*/
+.post-item p{
+    font-size: 1.1em;
+}
+.post-meta a, .post-meta{
+    text-decoration: none;
+    color:rgb(71, 75, 24);
+}
+.post-meta a{
+    font-weight: bold;
+}
+.post-meta{
+    display: inline-block;
+    background-color: #fdf0b6;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 0.8em;
+}
+.post-title{
+    font-size: 2.5em;
+    font-weight: lighter;
+    margin-bottom: 0.2em;
+}
+.post-title a{
+    color: darkslateblue;
+    text-decoration:none;
+}
+.post-title a:hover{
+    color:rgb(71, 43, 71, 0.8);
+}
+.post-meta a:hover{
+    text-decoration:underline;
+}
+
+.post-footer a{
+    text-decoration:none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    background-color: rgb(71, 43, 71);
+    color:white;
+    font-size: 1em;
+}
+.post-footer a:hover{
+    background-color: rgb(71, 43, 71, 0.8);
+}
+.post-footer{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.hr-light{
+    border-color: #d8d8d850;
+}
+
+
+
+
+
+/*main container homepage___________________________________*/
+.main-container{
+    width: 100%;
+    display: flex;
+}
+
+.main-container section{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 25px 50px;
+}
+
+
+
+
+.main-container h2{
+    color: rgb(66, 66, 66);
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.event-summary{
+    /*position: relative;*/
+    min-height: 70px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.event-summary-date{ 
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    padding: 14px 0 11px 0;
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgb(255, 172, 71);
+    width: 80px;
+    line-height: 1;
+    transition: opacity 0.33s;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 22%);
+}
+.front-blogs .event-summary-date{
+    background-color: rgb(71, 43, 71);
+}
+
+.event-summary-content{
+   padding-left: 95px;
+}
+.event-summary-content p{
+    font-size: 1.2em;
+    margin:0;
+}
+.event-summary-title{
+    font-size: 1.6em;
+    font-weight: normal;
+    margin: 0;
+}
+.event-summary-title a{
+    color: darkslateblue;
+}
+.event-summary-title a:hover{
+    text-decoration:none;
+}
+
+.event-summary-month {
+    text-align:center;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.event-summary-day {
+    text-align:center;
+    display: block;
+    font-size: 2.02rem;
+    font-weight: 700;
+}
+
+.read-more-link:visited, .read-more-link:link{
+    text-decoration: none;
+    color: gray;
+}
+.read-more-link:hover{
+    text-decoration: underline;
+}
+.read-more-link {
+    font-size: 18px;
+}
+.learn-more-btn a{
+    color:white;
+    padding: 18px 25px;
+    background-color: rgb(71, 43, 71);
+    border-radius: 10px;
+    align-self: center ;
+    text-decoration: none;
+    font-size: 1.3rem;
+    align-self: center ;
+}
+.learn-more-btn.events-btn a{
+    background-color: rgb(255, 172, 71,0.8);
+}
+.learn-more-btn a:hover{
+    background-color: rgb(71, 43, 71, 0.8);
+   /* text-shadow: 1px 1px 10px black;*/
+}
+.learn-more-btn.events-btn a:hover{
+    background-color: rgb(255, 172, 71);
+}
+
+.learn-more-btn{
+    margin: 50px 0px;
+    text-align:center;
+}
+
+/*main container page ___________________________________*/
+.main-container-page {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*Gallery programs___________________*/
+.programs-gallery{
+    /*height: 550px;*/
+    background-size: cover;
+    background-attachment: fixed;
+    /*opacity: 0.9;*/
+    display: flex;
+   flex-direction: column;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+   /*justify-content: space-around;*/
+ 
+}
+.programs-gallery h2{
+    /*color: rgb(66, 66, 66);*/
+    text-align: center;
+    font-size: 1.5em;
+   /* font-weight: normal;*/
+    padding-top: 1.5em;
+   /* flex-basis: 15%;*/
+   flex-basis: 20%;
+    
+}
+.gallery-cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+}
+.program-card{
+    flex-basis:28%;
+    text-align: center;
+    background-color: rgb(30, 30, 30, 0.65);
+    padding: 8px 3%;
+    color: white;
+    margin: 2.5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.program-card-post{
+    flex-basis:44%;
+    text-align: center;
+    background-color: rgb(30, 30, 30, 0.65);
+    padding: 8px 3%;
+    color: black;
+    margin: 3%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+/*.program-card *{
+    padding: 10px 5px;
+}*/
+
+.program-card h3, .program-card-post h3{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: orange;
+   /* color:white;*/
+    text-shadow: 1px 2px 4px black;
+}
+.program-card-background{
+    position:relative;
+    background-color: rgb(30, 30, 30, 0.65);
+}
+
+/*.learn-more-link{
+    padding: 15px 20px;
+    background-color: rgb(71, 43, 71);
+    border-radius: 15px;
+    
+    
+}*/
+.teachers-gallery{
+    display: flex;
+    flex-wrap:wrap;
+}
+.teacher-card{
+    flex-basis: 30%;
+    margin: 1.5%;
+}
+.teacher-card a{
+    position: relative;
+    display: inline-block;
+}
+.teacher-card img{
+    width: 100%;
+    height:auto;
+    display:block;
+}
+
+.teacher-card:hover{
+    opacity: 0.8;
+}
+.teacher-name{
+   /* display: inline-block;*/
+    text-decoration: none;
+    background-color: rgba(255, 176, 30, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    padding: 3px 10px;
+}
+.post-section-heading{
+    color:rgb(54, 54, 54);
+    font-weight: 100;
+    font-size: 2rem;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.301);
+}
+.teacher-profile img{
+    float:right;
+    width: 250px;
+    height:auto;
+    margin-left: 10px;
+}
+.teacher-profile::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*Footer___________________________________*/
+.site-footer{
+    padding: 0px 12%;
+    width: 100%;
+    background-image: linear-gradient(#fff, #ececec);
+}
+
+.footer-container{
+    padding: 30px 1%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-col{
+    display: block;
+    color: rgba(61, 61, 61);
+}
+/*
+.footer-col.col1 {
+   flex-basis: 35%;
+    
+}
+.col2.footer-col, .col3.footer-col{
+   flex-basis: 15%;
+}
+.footer-col.col4 {
+  flex-basis: 23%;
+    
+}
+*/
+.site-footer ul{
+    padding: 0;
+}
+.footer-col h1{ 
+    margin: 0;
+}
+.footer-col h3{
+    font-size: 1.35rem;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.home-link-footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.footer-col a{ 
+    text-decoration: none;
+    color: rgba(61, 61, 61);
+}
+
+.footer-col a:hover{ 
+    text-decoration: underline;
+}
+.footer-col.col4 a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.site-footer ul{
+    list-style-type: none;
+    margin: 0;
+}
+.social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.social-icons-list li{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff !important;
+    
+    text-align: center;
+    box-sizing: border-box;
+        
+   width: 100%;
+   height: 100%;
+    font-size: 1.25em;
+ 
+}
+.social i{
+    font-size: 0.85em;
+}
+.color-facebook{
+    background-color: #4862a3;
+}
+.color-twitter{
+    background-color: #55acee;
+}
+.color-youtube{
+    background-color:#cc1e1f;
+}
+.color-linkedin{
+    background-color: #0077b5;
+}
+.color-instagram{
+    background-color: #d8226b;
+}
+footer hr{
+    color: #dedede;
+    border-style: dashed;
+
+}
+/*Enroll Form__________________________________________*/
+#enroll-form{
+    padding: 30px 13%;
+    
+}
+#enroll-form input[type="text"], #enroll-form select, 
+#enroll-form textarea, #enroll-form input[type="email"]{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+
+    box-sizing: border-box;
+    background-color: rgb(255, 250, 221);
+      
+}
+#enroll-form abbr{
+    text-decoration: none;
+    color:red;
+}
+#enroll-form input[type="submit"]{
+    text-decoration:none;
+    border-radius: 2px;
+    border:none;
+    padding: 10px 15px;
+    background-color: rgb(71, 43, 71);
+    color:white;
+    font-size: 1em;
+    width: 100%;
+}
+#enroll-form label{
+    font-size: 1em;
+}
+
+
+
+/*Media queries _____________________________________ */
+@media screen and (max-width: 800px) {
+    #main-header-top .fa-bars{
+        display: block;
+        font-size: 1.2em;
+        color: white;
+    }
+    #main-navigation{
+        display: none;
+    }
+    #main-header-top:hover #main-navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 100%;
+        padding-bottom: 20px;
+    }
+    #main-header-top:hover #main-navigation a{
+        margin-top: 5px; 
+    }
+    #main-header-top:hover{
+        background-color: rgba(8, 4, 8, 0.9);
+        flex-wrap: wrap;
+    }
+    #main-header-top:hover .fa-bars{
+        color: orange;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    
+    .main-container section{
+
+        padding: 5%;
+        padding-top: 25px;
+    }
+    .gallery-cards{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .program-card{
+        padding: 15px;
+        margin: 15px;
+    }
+    .program-card-post{
+        padding: 15px;
+        margin: 15px;
+    }
+    /*
+    .programs-gallery{
+        height: initial;
+    }*/
+    .footer-col.col1 {
+        flex-basis: 100%;
+     }
+     .footer-col.col1 *{
+        text-align:center;
+     }
+     .footer-container{
+        flex-wrap: wrap;
+    }
+    main.page-main{
+        padding: 30px 8%;
+    }
+    
+   /* .program-card *{
+        margin: 10px 0px;
+    }*/
+    
+}
+
+@media screen and (max-width: 550px) {
+    .page-links{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .teacher-profile img{
+        float:none;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #main-header-top h1 {
+        font-size: 1.1em;
+    }
+    .page-subtitle, .front .page-subtitle{
+        font-size: 1rem;
+    }
+    .page-header, .front .page-header{
+         font-size: 2.5rem;
+    }
+    .headings{
+        margin: 60px 13% 110px;
+    }
+    /* .footer-container{
+        flex-direction: column;
+    }*/
+    .footer-col.col4 {
+       flex-basis: 100%;
+       margin-top:15px;
+    }
+    .footer-col.col4 *{
+        text-align:center;
+    }
+    .event-summary{
+        display: block;
+    }
+    .event-summary-date{
+        float: left;
+        height: 55px;
+        width: 55px;
+        position: static;
+        margin-right: 15px;
+        
+       /* display: inline-block;*/
+     }
+     .event-summary-month{
+         font-size: 0.9rem;
+     }
+     .event-summary-day{
+        font-size: 1.4rem;
+     }
+     .event-summary-content{
+         padding-left: 0px;
+     }
+     .event-summary-title{
+         font-size: 1.4em;
+     }
+
+
+}
